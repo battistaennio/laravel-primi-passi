@@ -17,5 +17,7 @@ Route::get('/', function () {
 
     $title = "Hello World";
 
-    return view('home', compact('title'));
+    $subtitle = "Questo è il primo esercizio fatto con Laravel!";
+
+    return view('home', compact('title', 'subtitle'));
 });

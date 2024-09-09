@@ -16,7 +16,10 @@ Creiamo più di una pagina e visualizziamo un header menu con i link di tutte le
 </head>
 
 <body>
+
     <h1>{{ $title }}</h1>
+    <h2>{{ $subtitle }}</h2>
+
 </body>
 
 </html>
