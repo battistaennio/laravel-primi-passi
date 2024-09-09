@@ -19,7 +19,8 @@ Route::get('/', function () {
 
     $subtitle = "Questo è il primo esercizio fatto con Laravel!";
 
-    $mvc = ["model", "view", "controller"];
+    //$mvc = ["model", "view", "controller"];
+    $mvc = [];
 
     return view('home', compact('title', 'subtitle', 'mvc'));
 });

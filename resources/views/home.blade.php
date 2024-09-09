@@ -20,13 +20,18 @@ Creiamo più di una pagina e visualizziamo un header menu con i link di tutte le
     <h1>{{ $title }}</h1>
     <h2>{{ $subtitle }}</h2>
 
-    <h3>Laravel è un framework PHP che segue l'architettura MVC:</h3>
+    @if (count($mvc) >= 1)
+        <h3>Laravel è un framework PHP che segue l'architettura MVC:</h3>
 
-    <ul>
-        @foreach ($mvc as $detail)
-            <li>{{ $detail }}</li>
-        @endforeach
-    </ul>
+        <ul>
+            @foreach ($mvc as $detail)
+                <li>{{ $detail }}</li>
+            @endforeach
+        </ul>
+    @else
+        <h3>L'array è vuoto :(</h3>
+    @endif
+
 </body>
 
 </html>
