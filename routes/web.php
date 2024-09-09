@@ -24,3 +24,21 @@ Route::get('/', function () {
 
     return view('home', compact('title', 'subtitle', 'mvc'));
 });
+
+Route::get('/about-us', function () {
+
+    $title = "About Us";
+
+    $description = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ipsam unde incidunt aliquid excepturi odio aperiam molestias illum assumenda. Minima ipsam tempora libero dolorem error perspiciatis autem optio repellendus assumenda?";
+
+    return view('about', compact('title', 'description'));
+});
+
+Route::get('/social', function () {
+
+    $title = "Follow us";
+
+    $socials = ["instagram", "facebook", "X", "discord"];
+
+    return view('social', compact('title', 'socials'));
+});

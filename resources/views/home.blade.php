@@ -17,6 +17,26 @@ Creiamo più di una pagina e visualizziamo un header menu con i link di tutte le
 
 <body>
 
+    <header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+
+                <li>
+                    <a href="/about-us">About Us</a>
+                </li>
+
+                <li>
+                    <a href="/social">Social</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
     <h1>{{ $title }}</h1>
     <h2>{{ $subtitle }}</h2>
 
